@@ -60,9 +60,8 @@ describe("SauceDemo Automation Test", () => {
             // Set browser window size to maximal screen resolution
             await browser.maximizeWindow();
 
-            await browser.url('https://www.saucedemo.com/');
+            await browser.url('https://testathon.live/');
             await browser.pause(3000);
-            await sendResultsToSlack("Test started", "Navigated to saucedemo.com");
 
             // Input username and password
             await $("#user-name").setValue("standard_user");
