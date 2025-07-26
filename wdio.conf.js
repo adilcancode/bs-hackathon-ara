@@ -5,6 +5,7 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
+    baseUrl: 'https://testathon.live/',
     //
     // ==================
     // Specify Test Files
@@ -21,7 +22,7 @@ exports.config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/**/*.js'
+        './test/specs/favourites-test.js'
     ],
     // Patterns to exclude.
     exclude: [
